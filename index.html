@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Personal Information</h1>
+    <form id="savePersonalInfo" action="#" method="POST">
+
+         <label for="fullName">Enter Full Name</label>
+        <input type="text" name="fullname" id="fullname" mandatory="true" fieldname="fullname">
+        <span id="errorName"></span>
+        <br>
+
+        <label for="email">Enter Email Address</label>
+        <input type="email" name="email" id="email" mandatory="true" fieldname="email">
+        <span id="errorEmail"></span>
+        <br>
+
+        <label for="mobile">Enter Mobile No</label>
+        <input type="number" name="mobile" id="mobile" length="11" mandatory="true" fieldname="mobile">
+        <span id="errormobile"></span>
+        <br>
+
+        <label for="birthdate">Birthdate</label>
+        <input type="date" name="birthdate" id="birthdate" mandatory="true" fieldname="birthdate">
+        <span id="errorbirthdate"></span>
+        <br>
+
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age"  readonly>
+        <br>
+
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender" mandatory="true" fieldname="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <span id="errorgender"></span><br>
+
+        <select name="actionPerform" id="actionPerform">
+            <option value="createuser">Add</option>
+            <option value="updateuser">Update</option>
+            <option value="deleteuser">Delete</option>
+        </select>
+        <br>
+        <button type="button" id="submitBtn">Submit</button>
+    </form> 
+    <script src="script.js"></script>
+</body>
+</html>
